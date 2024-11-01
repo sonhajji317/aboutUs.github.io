@@ -1,0 +1,128 @@
+/* Styling the page to center the card */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background: url(bg-boneka.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Styling the card */
+.card {
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+  background-color: rgb(226, 190, 143);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+}
+
+/* Carousel container */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+  height: 100%;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  background-image: url("bg.jpg");
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Scale images within container without cropping */
+  border-bottom: 2px solid #ddd;
+}
+
+.carousel-slide h2 {
+  margin: 5px 0;
+  font-size: 1.5em;
+}
+
+.carousel-slide p {
+  color: #555;
+  margin: 5px 0;
+}
+
+.carousel-button {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  display: none; /* Hide navigation button initially */
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-button.right {
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.start-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: rgb(228, 228, 228);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 95%;
+  }
+
+  .carousel-button {
+    padding: 4px;
+    font-size: 1em;
+  }
+
+  .carousel-slide h2 {
+    font-size: 1.2em;
+  }
+
+  .carousel-slide p {
+    font-size: 0.9em;
+  }
+
+  .start-button {
+    font-size: 1em;
+  }
+}

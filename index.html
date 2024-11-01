@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="carousel-container">
+        <div class="carousel-inner" id="carouselInner">
+          <div class="carousel-slide active" id="alertSlide">
+            <h2 style="color: white">Hallo Sayang!!!</h2>
+            <p style="color: white">
+              Happy Anniversary sayanggg, semoga kita langgeng terus ya sampe
+              tua nanti. oiya, aku buatin sedikit momen kita berdua dan juga
+              foto-foto kita, semoga kamu suka. I love u sayang.
+            </p>
+            <button class="start-button" onclick="startSlideshow()">
+              I'll show for you, Click here to start
+            </button>
+          </div>
+          <div class="carousel-slide" id="slide1">
+            <img src="1.jpeg" alt="Slide 1" />
+          </div>
+          <div class="carousel-slide">
+            <img src="2.jpeg" alt="Slide 2" />
+          </div>
+          <div class="carousel-slide">
+            <img src="3.jpeg" alt="Slide 3" />
+          </div>
+          <div class="carousel-slide">
+            <img src="4.jpeg" alt="Slide 4" />
+          </div>
+          <div class="carousel-slide">
+            <img src="5.jpeg" alt="Slide 5" />
+          </div>
+          <div class="carousel-slide">
+            <img src="6.jpeg" alt="Slide 6" />
+          </div>
+          <div class="carousel-slide">
+            <img src="7.jpeg" alt="Slide 7" />
+          </div>
+          <div class="carousel-slide">
+            <img src="8.jpeg" alt="Slide 8" />
+          </div>
+          <div class="carousel-slide">
+            <img src="9.jpeg" alt="Slide 9" />
+          </div>
+          <div class="carousel-slide">
+            <img src="10.jpeg" alt="Slide 10" />
+          </div>
+          <div class="carousel-slide">
+            <img src="stiker1.gif" alt="Slide 11" />
+          </div>
+        </div>
+        <button
+          class="carousel-button right"
+          id="nextButton"
+          onclick="nextSlide()"
+        >
+          &#10095;
+        </button>
+      </div>
+    </div>
+
+    <audio id="myAudio" autoplay>
+      <source src="musikku.mp3" type="audio/mp3" />
+      Browser Anda tidak mendukung elemen audio.
+    </audio>
+
+    <script src="main.js"></script>
+  </body>
+</html>
